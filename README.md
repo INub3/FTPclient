@@ -27,7 +27,7 @@ Para instalar el cliente debemos seguir los siguientes pasos:
 1. Clonar el proyecto:
 
 ```bash
-$ git clone https://github.com/INub3/TCPclient.git && cd TCPclient
+$ git clone https://github.com/INub3/FTPclient.git && cd TCPclient
 ```
 
 2. Ejecutar el archivo de configuración **Makefile** (por cada cambio que queramos realizar en el código `TCPftp.c`):
