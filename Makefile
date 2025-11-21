@@ -1,15 +1,15 @@
 # Makefile para cliente FTP 
 
-CLTOBJ= TCPftp.o sources/connectsock.o sources/connectTCP.o sources/passivesock.o sources/passiveTCP.o sources/errexit.o
-FTPOBJ= FTPsessions.o sources/connectsock.o sources/connectTCP.o sources/passivesock.o sources/passiveTCP.o sources/errexit.o
+CLTOBJ= EnriquezM-clienteFTP.o sources/connectsock.o sources/connectTCP.o sources/passivesock.o sources/passiveTCP.o sources/errexit.o
+FTPOBJ= EnriquezM-FTPsessions.o sources/connectsock.o sources/connectTCP.o sources/passivesock.o sources/passiveTCP.o sources/errexit.o
 
-all: TCPftp FTPsessions
+all: EnriquezM-clienteFTP EnriquezM-FTPsessions
 
-TCPftp: ${CLTOBJ}
-	cc -o TCPftp ${CLTOBJ}
+EnriquezM-clienteFTP: ${CLTOBJ}
+	cc -o EnriquezM-clienteFTP ${CLTOBJ}
 
-FTPsessions: ${FTPOBJ}
-	cc -o FTPsessions ${FTPOBJ}
+EnriquezM-FTPsessions: ${FTPOBJ}
+	cc -o EnriquezM-FTPsessions ${FTPOBJ}
 
 clean:
-	rm -f $(CLTOBJ) $(FTPOBJ) TCPftp FTPsessions
+	rm -f $(CLTOBJ) $(FTPOBJ) EnriquezM-clienteFTP EnriquezM-FTPsessions
